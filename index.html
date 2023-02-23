@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cv Matías</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!--Creando el encabezado-->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Matías</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#miinfo" onclick="seleccionar()">MI INFO</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!--creando Inicio-->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="Imagenes/yo.png" alt="" />
+        </div>
+        <h1>MATÍAS CANO</h1>
+        <h2>Bioingeniero - Desarrollador Web</h2>
+
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- creando MI INFO-->
+    <section id="miinfo" class="miinfo">
+      <div class="contenido-seccion">
+        <h2>SOBRE MÍ</h2>
+        <p>
+          <span>Hola, soy Matías Cano,</span> Bioingeniero recibido en el año
+          2013 dedicado a la reparación de equipamiento médico de mediana y alta
+          complejidad.
+        </p>
+        <p>
+          Actualmente me desempeño en electrónica industrial abarcando el
+          mantenimiento correctivo de máquinas, así como también la programación
+          de plc y desarrollo de proyectos de automatismo industrial.
+        </p>
+        <div class="fila">
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Fecha de Nacimiento</strong>
+                03-08-1983
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                3482 265157
+              </li>
+              <li>
+                <strong>Email</strong>
+                matias.cano@hotmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Calle 4 N° 635 Las Toscas, Santa Fe
+              </li>
+              <li>
+                <strong>País</strong>
+                Argentina
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button>
+          <!--<a download="CV Matías_Cano" href="Imagenes/CV_Matías_Cano.pdf"></a>-->
+          Descargar CV
+          <i class="fa-solid fa-download"></i>
+
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--creando curriculum-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Universitaria</h4>
+              <span class="casa"
+                >F.I. U.N.E.R (Universidad Nacional de Entre Ríos)</span
+              >
+              <span class="fecha">2003 - 2013</span>
+              <p>Título: Bioingeniero</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Secundario</h4>
+              <span class="casa"> E.E.T. Nº 619 (Villa Ocampo, Santa Fe).</span>
+              <span class="fecha">1997 - 2002</span>
+              <p>
+                Escuela Especial Técnica N° 619. Título: Técnico Mecánico -
+                Electricista.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Inglés y Programación</h4>
+              <span class="casa">Cultural Inglesa</span>
+              <span class="fecha">2006 - Actualidad</span>
+              <p>
+                Inglés: Cultural Inglesa , Open English nivel 8 finalizado.
+                Programación: C++, Assembler, MuPad, AutoCad, MatLab, ProgramCC.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia laboral</h3>
+            <div class="item der">
+              <h4>Electrónica Industrial</h4>
+              <span class="casa">Arlei S.A.</span>
+              <span class="fecha">2021 - Actualmente</span>
+              <p>
+                Mantenimiento electrónico, reparación de máquinas y tableros
+                eléctricos. Diseño y desarrollo de programas para automatismo
+                industrial.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Diseño y desarrollo</h4>
+              <span class="casa">Bioenergías Agropecuarias S.A.</span>
+              <span class="fecha">2018 - 2021</span>
+              <p>
+                Ingeniería de procesos, diseño y mantenimiento preventivo y
+                correctivo de máquinas industriales.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Equipamiento médico</h4>
+              <span class="casa">Privado</span>
+              <span class="fecha">2014 - 2021</span>
+              <p>
+                Realización de mantenimiento preventivo y correctivo de
+                equipamiento médico-odontológico de baja y mediana complejidad.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Creando contacto-->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!--formulario-->
+          <div class="col">
+            <input type="text" placeholder="Nombre" />
+
+            <input type="text" placeholder="Número de teléfono" />
+
+            <input type="text" placeholder="e-mail" />
+
+            <input type="text" placeholder="Asunto" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!--mapa-->
+          <div class="col">
+            <img src="Imagenes/ubicación.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Calle 4 N°635, Las Toscas.
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  Teléfono: 3482 265157
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  e-mail: matias.cano@hotmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
